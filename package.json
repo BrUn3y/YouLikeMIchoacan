@@ -1,0 +1,23 @@
+{
+  "name": "YouLikeMichoacan",
+  "version": "1.0.0",
+  "description": "Pagina web para promover el turimos en la region",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrUn3y/YouLikeMIchoacan.git"
+  },
+  "author": "EdgarBruneyCastañedaTorres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrUn3y/YouLikeMIchoacan/issues"
+  },
+  "homepage": "https://github.com/BrUn3y/YouLikeMIchoacan",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0"
+  }
+}

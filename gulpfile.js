@@ -1,6 +1,16 @@
-var gulp = require('gulp');
-gulp.task('comprimir', function() {
-gulp.src('lib/*.js')
-.pipe(uglify())
-.pipe(gulp.dest('dist'))
+/*
+* Dependencias
+*/
+var gulp = require('gulp'),
+  concat = require('gulp-concat'),
+  uglify = require('gulp-uglify');
+
+/*
+* Siplificar js 'demo'
+*/
+gulp.task('js', function () {
+  gulp.src('js/*.js')
+  .pipe(concat('todo.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest('js/build/'))
 });
