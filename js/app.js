@@ -53,6 +53,10 @@ angularRoutingApp.config(function($routeProvider) {
             templateUrl : 'pages/slideShow/PiecesFromMichoacan.html',
             controller  : 'slideShowController'
         })
+        .when('/NationalPark', {
+            templateUrl : 'pages/youtube/NationalPark.html',
+            controller  : 'youtubeController'
+        })
         .otherwise({
             redirectTo: '/'
         });
@@ -62,7 +66,7 @@ angularRoutingApp.controller('mainController', function($scope) {
     $scope.scrollTo = function(element) {
        $( 'html, body').animate({
           scrollTop: $('html').offset().top
-        }, 1000); 
+        }, 1000);
     }
 });
 
@@ -85,6 +89,12 @@ angularRoutingApp.controller('articulosController', function($scope) {
 });
 
 angularRoutingApp.controller('slideShowController', function($scope) {
+    $( 'html, body').animate({
+      scrollTop: $('#index-banner').offset().top
+    }, 400);
+});
+
+angularRoutingApp.controller('youtubeController', function($scope) {
     $( 'html, body').animate({
       scrollTop: $('#index-banner').offset().top
     }, 400);
